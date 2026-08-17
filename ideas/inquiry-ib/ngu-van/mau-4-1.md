@@ -134,7 +134,9 @@ Hãy nhập vai **Chiếc Cặp Cũ** (xưng *"Tôi"*) và gõ câu trả lời 
 ### 2. 🔍 Thám Tử Văn Học — Thử Thách Tráo Từ Real-time (Word Swap Widget)
 
 > [!TIP]
-> **👨‍💻 DEV UI SPEC**: Widget bên dưới cho phép học sinh **Click / Drag-and-Drop** để tráo đổi vị trí từ ngữ hoặc bật/tắt từ tu từ nhân hóa để thấy trực tiếp sự biến đổi của câu văn!
+> **👨‍💻 DEV UI SPEC — CƠ CHẾ "THỬ NGHIỆM PHÁ VỠ" (DESTRUCTIVE TESTING)**:
+> Widget bên dưới không phải trò chơi giải trí, mà dùng phương pháp **Tước đoạt từ vựng**: Khi học sinh click/drag-and-drop tráo từ nhân hóa thành từ trần trụi, thanh chỉ số **Attitude Meter** sụt giảm lập tức giúp học sinh **tự vấp phải sự mất mát cảm xúc**, từ đó ngộ ra cơ chế ngôn từ mà không cần học thuộc văn mẫu!
+
 
 <div style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 16px; border-radius: 12px; margin: 16px 0;">
   <p style="margin-top: 0; font-weight: bold; color: #1e40af;">🔄 Thử Thách Tráo Từ real-time (Interactive Text Swap):</p>

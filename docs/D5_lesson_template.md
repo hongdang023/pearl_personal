@@ -127,7 +127,13 @@ Tài liệu này quy định **Cấu trúc 2 Góc nhìn (Dual Point of View)** c
    - Học sinh kéo từ `Lom khom` thả về sau `vài chú` (*"Vài chú tiều lom khom dưới núi"*). 
    - **Phản hồi hệ thống**: Thanh chỉ số **Tốc độ gây chú ý (Attention Meter)** lập tức sụt giảm từ **100% xuống 20%** giúp học sinh tự nhận ra: *"Đảo từ 'Lom khom' lên đầu câu làm hình ảnh vất vả đập ngay vào mắt người đọc!"*.
 
+#### 🧠 CƠ CHẾ TÂM LÝ HỌC NHẬN THỨC (WHY IT WORKS - HIỂU THỰC SỰ VS. CHO VUI):
+- **Phương pháp "Thử nghiệm Phá vỡ" (Destructive Testing)**: Thay vì bắt học sinh học thuộc văn mẫu (*"Biện pháp này làm câu văn sinh động"*), việc cho học sinh tự tay tráo từ và nhìn thấy thanh chỉ số sụt giảm giúp các em **tự vấp phải sự mất mát cảm xúc**, từ đó "ngộ" ra bản chất của từ tu từ mà không cần học thuộc.
+- **Kích hoạt Não bộ Cảm xúc (Embodied Cognition)**: Âm thanh bối cảnh thực tế kích hoạt hệ thống thần kinh cảm xúc nhanh gấp 5 lần đọc chữ viết thuần túy, giúp học sinh bước vào đúng ngữ cảnh sống của nhân vật để viết bài thấu cảm.
+- **Chuyển giao Khái niệm (Concept Transfer)**: Thu âm lời tâm sự 30s của đồ vật xung quanh giúp chuyển giao chiếc chìa khóa tư duy (*Perspective*) từ văn bản SGK ra cuộc sống thực tế 10 năm sau.
+
 ---
+
 
 <!-- ========================================== -->
 <!-- VERSION 2: STUDENT-FACING VIEW (INTERACTIVE UX/UI SPEC FOR DEVS) -->
