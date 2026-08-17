@@ -111,7 +111,7 @@ Tài liệu này quy định **Cấu trúc 2 Góc nhìn (Dual Point of View)** c
 
 
 <!-- ========================================== -->
-<!-- VERSION 2: STUDENT-FACING VIEW             -->
+<!-- VERSION 2: STUDENT-FACING VIEW (INTERACTIVE UX/UI SPEC FOR DEVS) -->
 <!-- ========================================== -->
 <div id="pov-student" class="pov-content" style="display: none;">
 
@@ -119,21 +119,53 @@ Tài liệu này quy định **Cấu trúc 2 Góc nhìn (Dual Point of View)** c
 
 > 💡 **Thử thách hôm nay:** [1 câu slogan ngắn gọn, gây tò mò]
 
-### 1. 🥊 Trải Nghiệm "Phá Vỡ" (10 Phút)
-- **Nhiệm vụ của em**: [Bài tập tương tác ngắn: Nhập vai, thử thay từ, đổi giọng kể...]
-- **Thắc mắc nhỏ**: *Sau khi thử thay đổi, em thấy cảm xúc trong câu chuyện biến đổi thế nào?*
+---
 
-### 2. 🔍 Thám Tử Văn Học (SGK KTTTCS)
-- **Đoạn trích**: [Trích đoạn bài học trong SGK]
+### 1. 🥊 Trải Nghiệm "Phá Vỡ" (Thử Thách Đa Giác Quan 10 Phút)
+
+> [!NOTE]
+> **👨‍💻 DEV SPEC - WIDGET 1: Audio/Visual Provocation Widget**
+> - **Chức năng**: Cho phép học sinh tương tác âm thanh & hình ảnh trực quan trước khi đọc bài.
+> - **UI Component**: `<AudioSoundboard :sounds="['tieng_chim_hot.mp3', 'tieng_gio_thoi.mp3']" />` hoặc `<PerspectiveSlider />`.
+> - **Hành vi**: Click vào nút âm thanh để nghe tiếng kêu thật, kéo slider để thay đổi góc nhìn/vận tốc câu chuyện.
+
+- **Nhiệm vụ Đa giác quan dành cho em**: 
+  - 🔊 *Bấm nút nghe thử:* `<button onclick="playAudio('bird_sound')">🔊 Nghe Tiếng Con Vẹt Kêu Thực Tế</button>`
+  - ✍️ *Thử thách 3 câu:* [Nhập vai, thay đổi ngôi kể hoặc thử xóa từ tu từ trực tiếp vào ô input tương tác].
+
+---
+
+### 2. 🔍 Thám Tử Văn Học & Thử Thách Tráo Từ (Interactive Text Swap)
+
+> [!NOTE]
+> **👨‍💻 DEV SPEC - WIDGET 2: Drag & Drop Word Swap & Inversion Widget**
+> - **Chức năng**: Cho phép học sinh kéo thả tráo đổi vị trí từ vựng (ngữ pháp đảo ngữ) hoặc thay đổi từ tu từ để thấy ngay câu văn thay đổi sắc thái real-time.
+> - **UI Component**: `<InteractiveTextSwap :originalText="textA" :modifiedText="textB" @onSwap="handleSwap" />`.
+> - **Hành vi**: Kéo từ "Chú" thả đè lên từ "Con chim" -> Hệ thống tự đổi màu và hiển thị chỉ số khoảng cách thái độ (Attitude Distance Indicator).
+
+- **Đoạn trích tương tác (SGK KTTTCS)**:
+  > `<InteractiveTextSwap original="Chú vẹt nghiêng đầu... Chú nói: Anh ơi..." alt="Con chim vẹt kêu vẹt vẹt khi thấy nắng" />`
+
 - **Manh mối thám tử**:
-  1. *[Câu hỏi khám phá 1]*
-  2. *[Câu hỏi khám phá 2]*
+  1. *[Tráo từ để thử nghiệm]*: Kéo thả các từ ngữ chỉ người (`Chú`, `Anh ơi`) ra khỏi câu văn để xem hiệu ứng biến đổi ra sao.
+  2. *[Câu hỏi tự phát hiện]*: *Khi tráo từ, khoảng cách giữa nhân vật và con chim thay đổi thế nào?*
 
-### 3. 💬 Tranh Luận & Thử Thách Thực Tế (Transfer Challenge)
+---
+
+### 3. 💬 Tranh Luận & Thử Thách Thực Tế (Audio Record / Drawing Widget)
+
+> [!NOTE]
+> **👨‍💻 DEV SPEC - WIDGET 3: Voice Recorder & Interactive Canvas Widget**
+> - **Chức năng**: Học sinh thu âm giọng nói nhân hóa của mình hoặc vẽ/tải ảnh đồ vật thực tế xung quanh.
+> - **UI Component**: `<VoiceRecorder maxDuration="60" />` hoặc `<InteractiveCanvas />`.
+
 - **Góc tranh luận**: *[Câu hỏi mở kích thích ý kiến riêng]*
-- **Thử thách Thực tế**: *[Áp dụng "mật mã" vừa học vào một tình huống mới ngoài đời]*
+- **Thử thách Thực tế**:
+  - 🎙️ *Thu âm giọng nói:* `<button onclick="startRecord()">🎙️ Thu âm 30s giọng nhân hóa của em</button>`
+  - 📸 *Tải ảnh thực tế:* Tải ảnh 1 đồ vật trên bàn học và dán "nhãn dán thông điệp" cho đối tượng đó.
 
 </div>
+
 ```
 
 

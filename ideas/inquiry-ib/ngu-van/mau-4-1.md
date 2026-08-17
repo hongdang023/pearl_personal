@@ -102,44 +102,75 @@ function setPOV(pov) {
 </div>
 
 <!-- ========================================== -->
-<!-- VERSION 2: STUDENT-FACING VIEW             -->
+<!-- VERSION 2: STUDENT-FACING VIEW (INTERACTIVE DEMO) -->
 <!-- ========================================== -->
 <div v-if="currentPOV === 'student'" class="pov-content">
 
-# 🚀 Mẫu 4.1: Nếu Đồ Vật & Con Vật Biết Nói?
+# 🚀 Mẫu 4.1: Nếu Đồ Vật & Con Vật Biết Nói? (Interactive UI Demo)
 
-> 💡 **Bí mật hôm nay:** Đồ vật xung quanh em không hề "im lặng"! Nếu chúng biết cất lời, thế giới sẽ biến thành một cuộc phiêu lưu cực kỳ thú vị!
+> 💡 **Bí mật hôm nay:** Đồ vật xung quanh em không hề "im lặng"! Hãy chạm, bấm nghe và thử tráo từ ngữ dưới đây để giải mã "mật mã ngôn từ"!
 
 ---
 
-### 1. 🥊 Trải Nghiệm "Nhập Vai Phá Vỡ" (10 Phút)
+### 1. 🥊 Trải Nghiệm "Âm Thanh & Nhập Vai Phá Vỡ" (10 Phút)
 
 Đọc câu chuyện ngắn này:
 > *"Chiếc cặp sách cũ bị rách quai nằm ở góc bàn. Nam mua một chiếc cặp mới đẹp hơn và quên chiếc cặp cũ đi."*
 
+<div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 16px; border-radius: 12px; margin: 16px 0;">
+  <p style="margin-top: 0; font-weight: bold; color: #166534;">🔊 Trải nghiệm Âm Thanh Thực Tế (Audio Trigger):</p>
+  <button style="background: #22c55e; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 8px;" onclick="alert('🔊 [System Audio]: Tiếng vẹt kêu vẹt vẹt & tiếng quạt kêu cót két...')">
+    ▶️ Bấm nghe Âm thanh thực tế của Chú Vẹt & Chiếc Cặp Cũ
+  </button>
+</div>
+
 👉 **Nhiệm vụ của em (3 câu):**
-Hãy "biến hình" thành **Chiếc Cặp Cũ** (xưng *"Tôi"*) để kể lại câu chuyện trên!
+Hãy nhập vai **Chiếc Cặp Cũ** (xưng *"Tôi"*) và gõ câu trả lời của em vào ô bên dưới:
+<textarea placeholder="Ví dụ: Tôi nằm rách quai ở góc bàn, nhìn Nam hân hoan ôm chiếc cặp mới..." style="width: 100%; height: 80px; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; margin-top: 8px;"></textarea>
 
 ---
 
-### 2. 🔍 Thám Tử Văn Học (SGK KTTTCS)
+### 2. 🔍 Thám Tử Văn Học — Thử Thách Tráo Từ Real-time (Word Swap Widget)
 
-Soi đoạn trích trong bài *Con vẹt xanh* (SGK Ngữ văn 4 Kết nối tri thức với cuộc sống):
-> *"Chú vẹt nghiêng đầu, nhìn Anh bằng đôi mắt tròn xoe sáng quắc. Chú nói: 'Anh ơi, nắng lên rồi!'"*
+> [!TIP]
+> **👨‍💻 DEV UI SPEC**: Widget bên dưới cho phép học sinh **Click / Drag-and-Drop** để tráo đổi vị trí từ ngữ hoặc bật/tắt từ tu từ nhân hóa để thấy trực tiếp sự biến đổi của câu văn!
+
+<div style="background: #eff6ff; border: 1px solid #bfdbfe; padding: 16px; border-radius: 12px; margin: 16px 0;">
+  <p style="margin-top: 0; font-weight: bold; color: #1e40af;">🔄 Thử Thách Tráo Từ real-time (Interactive Text Swap):</p>
+  
+  <div style="background: white; padding: 12px; border-radius: 8px; font-size: 16px; line-height: 1.6; border: 1px dashed #3b82f6;">
+    <b>Cách A (Có Nhân hóa):</b> <span style="background: #fef08a; padding: 2px 6px; border-radius: 4px;">Chú</span> vẹt nghiêng đầu, nhìn <span style="background: #fef08a; padding: 2px 6px; border-radius: 4px;">Anh</span> bằng đôi mắt tròn xoe. <span style="background: #fef08a; padding: 2px 6px; border-radius: 4px;">Chú</span> nói: "Anh ơi, nắng lên rồi!"
+  </div>
+
+  <div style="margin-top: 12px; background: white; padding: 12px; border-radius: 8px; font-size: 16px; line-height: 1.6; border: 1px dashed #94a3b8;">
+    <b>Cách B (Tráo từ trần trụi):</b> <span style="background: #e2e8f0; padding: 2px 6px; border-radius: 4px;">Con chim</span> vẹt kêu vẹt vẹt khi thấy nắng lên.
+  </div>
+
+  <div style="margin-top: 12px; font-size: 13px; color: #1e3a8a;">
+    👉 <b>Chỉ số khoảng cách thái độ (Attitude Distance Meter):</b>
+    <div style="background: #e2e8f0; height: 10px; border-radius: 5px; margin-top: 4px; overflow: hidden;">
+      <div style="background: #3b82f6; width: 85%; height: 100%;"></div>
+    </div>
+    <span style="font-size: 11px; color: #64748b;">Cách A làm khoảng cách ngắn lại (Gần gũi: 85%) vs Cách B làm khoảng cách xa ra (Xa cách: 15%)</span>
+  </div>
+</div>
 
 🔍 **Manh mối thám tử:**
-1. Những từ nào (`Chú` / `Anh ơi` / `nghiêng đầu`) đã biến con vẹt thành một người bạn?
-2. Nếu thay thành: *"Con chim vẹt kêu khi thấy nắng"*, em thấy tình bạn trong câu văn còn ấm áp nữa không? Tại sao?
+1. Những từ ngữ nào (`Chú` / `Anh ơi` / `Nghiêng đầu`) đã làm thay đổi khoảng cách giữa người nói và con vẹt?
+2. Khi tráo sang Cách B, em thấy thái độ của người đọc với con vẹt biến đổi thế nào?
 
 ---
 
-### 3. 💬 Tranh Luận & Thử Thách Thực Tế (Transfer Challenge)
+### 3. 💬 Tranh Luận & Thử Thách Thu Âm (Voice Record Widget)
 
 🤔 **Góc tranh luận:**
-*Theo em, đồ vật có thực sự có cảm xúc không, hay chỉ do con người tự tưởng tượng ra?*
+*Theo em, loài vật và đồ vật có thực sự có cảm xúc không, hay chỉ do con người tự tưởng tượng ra rồi gán cho chúng?*
 
-🚀 **Thử thách Thực tế (Chọn 1 trong 2):**
-- **Option A**: Viết 5 câu tâm sự của **Cục Tẩy nhỏ** mỗi khi bị dùng để xóa vết mực sai.
-- **Option B**: Nhìn một chiếc cây rụng lá ngoài sân trường và viết 3 câu nhân hóa lời nhắn gửi của chiếc cây đó tới các bạn học sinh!
+🚀 **Thử thách Thực tế (Em chọn 1 trong 2):**
+- **Option A (Ghi âm giọng nói 🎙️)**: Bấm nút bên dưới và thu âm 30s lời tâm sự của **Cục Tẩy nhỏ** khi bị dùng để xóa vết mực sai:
+  <div style="margin-top: 8px;">
+    <button style="background: #ef4444; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer;" onclick="alert('🎙️ [Voice Recorder Active]: Đang thu âm giọng nói của học sinh...')">🎙️ Bấm để Thu Âm Giọng Nói Nhân Hóa (30s)</button>
+  </div>
+- **Option B (Chụp ảnh & Dán nhãn 📸)**: Chụp ảnh một chiếc cây ngoài sân trường và gán "nhãn dán thông điệp" cho cây!
 
 </div>
