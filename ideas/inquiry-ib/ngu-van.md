@@ -4,7 +4,37 @@ Trong khung IB (**Language and Literature**), câu hỏi trung tâm không phả
 
 ---
 
+### 📊 Bảng So Sánh Đối Chiếu 3 Bên: "Học Ngữ Văn Là Học Cái Gì?"
+
+| Tiêu chí | 🇻🇳 Ngữ Văn Việt Nam (Truyền thống / SGK cũ) | 🌍 Khung IB (Primary & Middle Years - PYP/MYP) | 🇺🇸 Building 21 (CBE - Competency-Based) |
+| :--- | :--- | :--- | :--- |
+| **Câu trả lời cho "Học cái gì?"** | **Học Tác phẩm & Tri thức cụ thể (Facts/Texts)**.<br>Nắm nội dung câu chuyện, thuộc lòng ý nghĩa nhân vật, hoàn cảnh sáng tác. | **Học Khái niệm Chuyển giao (Key Concepts)**.<br>Dùng bài văn làm phương tiện để hiểu các chiếc chìa khóa tư duy như *Perspective*, *Creativity*, *Connections*. | **Học Năng lực Thực hành (Competencies & Skills)**.<br>Rèn luyện năng lực *Viết luận*, *Trình bày giao tiếp*, *Tư duy phản biện*, *Thói quen thành công*. |
+| **Vai trò của Văn bản / SGK** | **Văn bản là "Kho đáp án cố định"**.<br>Tác giả đã giấu sẵn đáp án trong bài, học sinh có nhiệm vụ học thuộc "đúng ý văn mẫu". | **Văn bản là "Kết quả của các Lựa chọn" (Text as Choice)**.<br>Văn bản là phòng thí nghiệm để bóc tách xem lựa chọn ngôn từ/ngôi kể tạo ra hiệu ứng gì. | **Văn bản là "Bối cảnh thực tế (Real-world Task)"**.<br>Văn bản là ngữ liệu để thực hiện một sản phẩm dự án (Studio Project / Presentation). |
+| **Năng lực đọng lại sau 10 năm** | Học sinh dễ **quên sạch chi tiết** tác phẩm (Facts) nếu không tiếp xúc lại. | Học sinh nắm được **Chìa khóa tư duy khái niệm (Concepts)** để giải mã bất kỳ bản tin/văn bản mới nào ngoài đời. | Học sinh đạt được **Nấc thang thành thạo (Learning Progressions Stage 1-12)** áp dụng trực tiếp vào công việc. |
+| **Cách đo lường & Đánh giá** | **Chấm theo Điểm số tổng hợp (0-10)**.<br>Đo lường mức độ chép đúng/viết hay so với đáp án chung. | **Chấm theo 4 Tiêu chí độc lập (Criteria A, B, C, D từ 0-8)**.<br>A: Phân tích, B: Bố cục, C: Sáng tạo, D: Ngôn ngữ. | **Chấm theo Mức độ Thành thạo (Mastery Continuum)**.<br>Đánh giá sự tiến bộ trên dải năng lực, có cơ hội làm lại không bị phạt điểm (No penalty). |
+
+---
+
+### 💡 Ánh Chiếu Triết Lý Nemo12: "Học Để Hiểu Thực Sự & Áp Dụng Đời Sống" VS. "Học Để Thi"
+
+Chiếu theo triết lý học tập của **Pearl / Nemo12** (*Student Portrait > Điểm số KPI / Điểm cao ≠ Hiểu sâu*), sự khác biệt giữa các kiểu học được thể hiện qua 3 dấu hiệu nhận biết:
+
+> [!TIP]
+> **1. Học để thi (Luyện đề / Thuộc lòng văn mẫu)** — ❌ **Không phù hợp với Nemo12**:
+> * Học sinh đối phó với kỳ thi bằng cách chép lại ý nghĩa có sẵn. Thi xong 1-2 tuần là quên sạch chi tiết (Facts). Điểm số tổng hợp (0-10) che giấu năng lực thật.
+>
+> **2. Học theo năng lực thực hành (Building 21 / CBE)** — ⚠️ **Phù hợp một phần**:
+> * Giúp học sinh rèn luyện kỹ năng thực tế (viết, thuyết trình), nhưng đôi khi quá chú trọng vào đầu ra công việc ngắn hạn mà coi nhẹ chiều sâu tư duy bản chất.
+>
+> **3. Học qua Khái niệm & Truy vấn (IB Framework)** — ✅ **HOÀN TOÀN KHÁC BIỆT & PHÙ HỢP VỚI NEMO12**:
+> * **Dùng bài văn SGK làm phương tiện** để rèn luyện các chiếc *chìa khóa tư duy khái niệm* (`Perspective`, `Connections`, `Form`). 
+> * 10 năm sau khi quên sạch chi tiết tác phẩm, đứa trẻ **vẫn giữ lại năng lực tư duy đời sống**: Khi xem một bản tin thời sự, đứa trẻ ngay lập tức biết bật tư duy phản biện: *"Ai đang kể câu chuyện này? Góc nhìn (Perspective) này đang đưa thông tin gì và che giấu điều gì?"*.
+
+---
+
+
 ### 🔑 Bảng Khái Niệm Cốt Lõi (Key Concepts) Bắt Buộc Của Môn Văn IB
+
 
 Theo quy định chuẩn trong tài liệu hướng dẫn chính thức của Tổ chức IB (*IB PYP & MYP Language and Literature Guide*):
 
