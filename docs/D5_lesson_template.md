@@ -107,8 +107,27 @@ Tài liệu này quy định **Cấu trúc 2 Góc nhìn (Dual Point of View)** c
 > - **Câu hỏi trò chuyện (3 phút)**: [1 câu hỏi ngắn cha mẹ hỏi con sau giờ học]
 > - **Hoạt động thực tế (5 phút)**: [Trải nghiệm nhỏ cùng con ở nhà]
 
-</div>
+---
 
+### 🎨 MA TRẬN TÁC ĐỘNG 5 GIÁC QUAN TRÊN TRÌNH DUYỆT WEB (MULTI-SENSORY UX SPEC FOR DEVS)
+
+Để bài học Ngữ văn không dừng lại ở văn bản tĩnh (flat text), hệ thống phần mềm cần thiết kế các Widget tương tác tác động trực tiếp vào **5 Giác Quan** của học sinh:
+
+| Giác quan | Tác động qua Trình duyệt Web (Digital UX) | Gợi ý Kỹ thuật & UI Component cho Dev |
+| :--- | :--- | :--- |
+| 👁️ **Thị giác (Visual)** | **Tráo từ & Biến đổi sắc thái màu real-time**.<br>- Tráo đổi từ ngữ tu từ/đảo ngữ ➔ Thanh chỉ số khoảng cách thái độ (*Attitude Distance Meter*) co dãn real-time.<br>- Bật/Tắt các lớp từ loại (Danh từ, Tính từ, Biện pháp tu từ). | `<InteractiveTextSwap />`<br>`<VisualLayerToggle />`<br>`<AttitudeMeter :value="distance" />` |
+| 🔊 **Thính giác (Auditory)** | **Soundboard ngữ cảnh & Thu âm giọng nói**.<br>- Kích hoạt âm thanh thực tế (*tiếng vẹt kêu, tiếng dây kéo cặp rách, tiếng mưa rào, tiếng quạt kêu*).<br>- Thu âm giọng nói 30s của học sinh khi nhập vai nhân vật. | `<AudioSoundboard :src="file" />`<br>`<VoiceRecorder @onSave="upload" />`<br>`Web Audio API` |
+| 🖐️ **Xúc giác (Tactile / Haptic)** | **Kéo thả (Drag & Drop) & Rung phản hồi (Haptic)**.<br>- Kéo từ vựng trong câu đảo ngữ thả đè lên vị trí mới.<br>- Trượt thanh Slider thay đổi góc nhìn/vận tốc câu chuyện.<br>- Rung phản hồi (Haptic Feedback) trên di động khi thả đúng vị trí. | `<DragDropContainer />`<br>`<PerspectiveSlider />`<br>`navigator.vibrate(50)` |
+| 👅 **Vị giác (Gustatory)** | **Gợi nhớ vị giác qua thẻ tương tác Đa cảm xúc**.<br>- Học sinh chọn/ghép các "thẻ hương vị" (*vị mặn của nước mắt, vị ngọt của quả chín, vị chát*) để giải mã tính từ tu từ trong bài thơ/bài miêu tả. | `<FlavorTagPicker :tags="['Mặn', 'Ngọt', 'Chát']" />` |
+| 👃 **Khứu giác (Olfactory)** | **Kích hoạt ký ức mùi hương qua Prompt âm thanh - hình ảnh**.<br>- Phát âm thanh tiếng mưa rào + hiệu ứng sương mờ trên màn hình ➔ Yêu cầu chọn "Thẻ mùi hương" (*Mùi ngái của đất sau mưa, mùi ổi chín*) để làm giàu vốn từ. | `<SensoryPromptCard type="smell" />` |
+
+#### 💡 Ví Dụ Thực Tế Cho Dev Dựng Hệ Thống:
+1. **Ví dụ Đảo ngữ (Thị giác + Xúc giác)**: 
+   - Câu gốc: *"Lom khom dưới núi tiều vài chú"*. 
+   - Học sinh kéo từ `Lom khom` thả về sau `vài chú` (*"Vài chú tiều lom khom dưới núi"*). 
+   - **Phản hồi hệ thống**: Thanh chỉ số **Tốc độ gây chú ý (Attention Meter)** lập tức sụt giảm từ **100% xuống 20%** giúp học sinh tự nhận ra: *"Đảo từ 'Lom khom' lên đầu câu làm hình ảnh vất vả đập ngay vào mắt người đọc!"*.
+
+---
 
 <!-- ========================================== -->
 <!-- VERSION 2: STUDENT-FACING VIEW (INTERACTIVE UX/UI SPEC FOR DEVS) -->
@@ -126,11 +145,11 @@ Tài liệu này quy định **Cấu trúc 2 Góc nhìn (Dual Point of View)** c
 > [!NOTE]
 > **👨‍💻 DEV SPEC - WIDGET 1: Audio/Visual Provocation Widget**
 > - **Chức năng**: Cho phép học sinh tương tác âm thanh & hình ảnh trực quan trước khi đọc bài.
-> - **UI Component**: `<AudioSoundboard :sounds="['tieng_chim_hot.mp3', 'tieng_gio_thoi.mp3']" />` hoặc `<PerspectiveSlider />`.
-> - **Hành vi**: Click vào nút âm thanh để nghe tiếng kêu thật, kéo slider để thay đổi góc nhìn/vận tốc câu chuyện.
+> - **UI Component**: `<AudioSoundboard :sounds="['sound_a.mp3', 'sound_b.mp3']" />` hoặc `<PerspectiveSlider />`.
+> - **Hành vi**: Click vào nút âm thanh để nghe tiếng kêu/tiếng động thực tế của ngữ cảnh.
 
 - **Nhiệm vụ Đa giác quan dành cho em**: 
-  - 🔊 *Bấm nút nghe thử:* `<button onclick="playAudio('bird_sound')">🔊 Nghe Tiếng Con Vẹt Kêu Thực Tế</button>`
+  - 🔊 *Bấm nút nghe thử:* `<button onclick="playAudio('sound_id')">🔊 Nghe Âm thanh thực tế của Ngữ cảnh</button>`
   - ✍️ *Thử thách 3 câu:* [Nhập vai, thay đổi ngôi kể hoặc thử xóa từ tu từ trực tiếp vào ô input tương tác].
 
 ---
@@ -141,14 +160,14 @@ Tài liệu này quy định **Cấu trúc 2 Góc nhìn (Dual Point of View)** c
 > **👨‍💻 DEV SPEC - WIDGET 2: Drag & Drop Word Swap & Inversion Widget**
 > - **Chức năng**: Cho phép học sinh kéo thả tráo đổi vị trí từ vựng (ngữ pháp đảo ngữ) hoặc thay đổi từ tu từ để thấy ngay câu văn thay đổi sắc thái real-time.
 > - **UI Component**: `<InteractiveTextSwap :originalText="textA" :modifiedText="textB" @onSwap="handleSwap" />`.
-> - **Hành vi**: Kéo từ "Chú" thả đè lên từ "Con chim" -> Hệ thống tự đổi màu và hiển thị chỉ số khoảng cách thái độ (Attitude Distance Indicator).
+> - **Hành vi**: Kéo thả từ vựng -> Hệ thống tự đổi màu và hiển thị chỉ số khoảng cách thái độ (Attitude Distance Indicator).
 
 - **Đoạn trích tương tác (SGK KTTTCS)**:
-  > `<InteractiveTextSwap original="Chú vẹt nghiêng đầu... Chú nói: Anh ơi..." alt="Con chim vẹt kêu vẹt vẹt khi thấy nắng" />`
+  > `<InteractiveTextSwap original="Đoạn văn gốc A" alt="Đoạn văn tráo từ B" />`
 
 - **Manh mối thám tử**:
-  1. *[Tráo từ để thử nghiệm]*: Kéo thả các từ ngữ chỉ người (`Chú`, `Anh ơi`) ra khỏi câu văn để xem hiệu ứng biến đổi ra sao.
-  2. *[Câu hỏi tự phát hiện]*: *Khi tráo từ, khoảng cách giữa nhân vật và con chim thay đổi thế nào?*
+  1. *[Tráo từ để thử nghiệm]*: Kéo thả các từ ngữ tu từ/đảo ngữ ra khỏi câu văn để xem hiệu ứng biến đổi ra sao.
+  2. *[Câu hỏi tự phát hiện]*: *Khi tráo từ, hiệu ứng cảm xúc thay đổi thế nào?*
 
 ---
 
@@ -167,5 +186,6 @@ Tài liệu này quy định **Cấu trúc 2 Góc nhìn (Dual Point of View)** c
 </div>
 
 ```
+
 
 

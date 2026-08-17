@@ -119,10 +119,11 @@ function setPOV(pov) {
 
 <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 16px; border-radius: 12px; margin: 16px 0;">
   <p style="margin-top: 0; font-weight: bold; color: #166534;">🔊 Trải nghiệm Âm Thanh Thực Tế (Audio Trigger):</p>
-  <button style="background: #22c55e; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 8px;" onclick="alert('🔊 [System Audio]: Tiếng vẹt kêu vẹt vẹt & tiếng quạt kêu cót két...')">
-    ▶️ Bấm nghe Âm thanh thực tế của Chú Vẹt & Chiếc Cặp Cũ
+  <button style="background: #22c55e; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 8px;" onclick="alert('🔊 [System Audio]: Tiếng dây kéo cặp rách xoẹt xoẹt & tiếng sách vở rơi cót két...')">
+    ▶️ Bấm nghe Âm thanh thực tế của Dây Kéo Rách & Khóa Cặp Cũ
   </button>
 </div>
+
 
 👉 **Nhiệm vụ của em (3 câu):**
 Hãy nhập vai **Chiếc Cặp Cũ** (xưng *"Tôi"*) và gõ câu trả lời của em vào ô bên dưới:
