@@ -15,6 +15,7 @@ export default defineConfig({
       { text: 'Hiểu', link: '/learner/', activeMatch: '/learner/' },
       { text: 'Chân dung', link: '/portrait/', activeMatch: '/portrait/' },
       { text: 'Trường phái', link: '/ideas/', activeMatch: '/ideas/' },
+      { text: 'Curriculum', link: '/curriculum/', activeMatch: '/curriculum/' },
       { text: 'Mentor', link: '/mentor-guidelines/', activeMatch: '/mentor-guidelines/' },
       { text: 'Quyết định', link: '/decisions/', activeMatch: '/decisions/' },
       { text: 'Ngộ nhận', link: '/mental-models/', activeMatch: '/mental-models/' },
