@@ -1,1 +1,0 @@
-import{_ as h,o as t,c as i,a2 as a}from"./chunks/framework.mRCPFc5l.js";const m=JSON.parse('{"title":"IB","description":"","frontmatter":{},"headers":[],"relativePath":"ideas/ib.md","filePath":"ideas/ib.md"}'),c={name:"ideas/ib.md"};function o(g,n,u,r,e,s){return t(),i("div",null,[...n[0]||(n[0]=[a("",15)])])}const b=h(c,[["render",o]]);export{m as __pageData,b as default};

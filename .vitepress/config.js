@@ -6,6 +6,7 @@ export default defineConfig({
   titleTemplate: ':title — Pearl · Nemo12',
   description: 'Nemo12 tin vào điều gì, hiểu learner như thế nào, và vì sao hệ thống lại dạy và đánh giá theo cách đó.',
   cleanUrls: true,
+  ignoreDeadLinks: true,
   themeConfig: {
     logo: '/pearl.svg',
     siteTitle: 'Pearl',
@@ -14,6 +15,7 @@ export default defineConfig({
       { text: 'Hiểu', link: '/learner/', activeMatch: '/learner/' },
       { text: 'Chân dung', link: '/portrait/', activeMatch: '/portrait/' },
       { text: 'Trường phái', link: '/ideas/', activeMatch: '/ideas/' },
+      { text: 'Mentor', link: '/mentor-guidelines/', activeMatch: '/mentor-guidelines/' },
       { text: 'Quyết định', link: '/decisions/', activeMatch: '/decisions/' },
       { text: 'Ngộ nhận', link: '/mental-models/', activeMatch: '/mental-models/' },
       {
@@ -32,6 +34,64 @@ export default defineConfig({
       }
     ],
     sidebar: {
+      '/mentor-guidelines/': [
+        {
+          text: 'Mentor Guidelines',
+          items: [
+            { text: 'Tổng quan', link: '/mentor-guidelines/' }
+          ]
+        },
+        {
+          text: '1 · Foundations & Mindset',
+          items: [
+            { text: '1.1 Why this guideline exists', link: '/mentor-guidelines/foundations/why-this-guideline-exists' },
+            { text: '1.2 What good mentoring looks like', link: '/mentor-guidelines/foundations/what-good-mentoring-looks-like' },
+            { text: '1.3 Learning vs. Product evidence', link: '/mentor-guidelines/foundations/learning-vs-product-evidence' }
+          ]
+        },
+        {
+          text: '2 · Decision & Intervention Framework',
+          items: [
+            { text: '2.1 The Decision Framework', link: '/mentor-guidelines/framework/decision-framework' },
+            { text: '2.2 The Intervention Ladder (Levels 0-4)', link: '/mentor-guidelines/framework/intervention-ladder' },
+            { text: '2.3 Student Agency & Step-back Rules', link: '/mentor-guidelines/framework/student-agency-step-back' }
+          ]
+        },
+        {
+          text: '3 · The 5E Mentor Playbook',
+          items: [
+            { text: '3.1 Engage · Create Need to Know', link: '/mentor-guidelines/playbook-5e/engage' },
+            { text: '3.2 Explore · Allow Trial & Error', link: '/mentor-guidelines/playbook-5e/explore' },
+            { text: '3.3 Explain · Goal → Attempt → Gap', link: '/mentor-guidelines/playbook-5e/explain' },
+            { text: '3.4 Elaborate · Push Beyond Product', link: '/mentor-guidelines/playbook-5e/elaborate' },
+            { text: '3.5 Evaluate · Measure Learning', link: '/mentor-guidelines/playbook-5e/evaluate' }
+          ]
+        },
+        {
+          text: '4 · Question Bank & Anti-patterns',
+          items: [
+            { text: '4.1 Question Bank by Diagnosis', link: '/mentor-guidelines/tools/question-bank' },
+            { text: '4.2 Do / Don\'t: Anti-patterns', link: '/mentor-guidelines/tools/anti-patterns' },
+            { text: '4.3 Diagnostic Matrix', link: '/mentor-guidelines/tools/diagnostic-matrix' }
+          ]
+        },
+        {
+          text: '5 · Common Situations (Playbook A-Z)',
+          items: [
+            { text: '5.1 Student no intent or silent', link: '/mentor-guidelines/situations/no-intent-silent' },
+            { text: '5.2 Stuck with tools & Over-dependent', link: '/mentor-guidelines/situations/stuck-tools-dependent' },
+            { text: '5.3 Fast finisher & Superficial reflection', link: '/mentor-guidelines/situations/fast-finisher-reflection' },
+            { text: '5.4 Handling resistance', link: '/mentor-guidelines/situations/handling-resistance' }
+          ]
+        },
+        {
+          text: '6 · Operations & Quality Audit',
+          items: [
+            { text: '6.1 Before / During / After Checklist', link: '/mentor-guidelines/operations/class-checklist' },
+            { text: '6.2 Mentor Quality Audit Framework', link: '/mentor-guidelines/operations/quality-audit' }
+          ]
+        }
+      ],
       '/learning/': [
         {
           text: 'Học',
@@ -176,3 +236,4 @@ export default defineConfig({
     }
   }
 })
+
